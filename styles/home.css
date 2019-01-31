@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Poiret+One');
+
+html{
+	background: no-repeat fixed center;
+	background-size:cover;
+}
+
+h1, h2, h3{
+	font-family: 'Poiret One', cursive;
+	margin-left: 150px;
+}
+
+h1{
+	font-weight: lighter;
+	font-size: 100px;
+	letter-spacing: 7px;
+}
+
+h2{
+	letter-spacing: 5px;
+	margin-bottom: 50px;
+	display: inline;
+	/*outline: solid 2px red;*/
+}
+
+img{
+	width: 500px;
+	height: auto;
+	/*outline: solid 2px blue;*/
+	float: left;
+}
+
+p{
+	/*outline: solid 2px green;*/
+	font-family: 'Nanum Myeongjo', serif;
+	font-size: 25px;
+	line-height: 70px;
+	font-weight: lighter;
+}
+
+a{
+	background-color: #b3ffd9;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+
+a:hover{
+	background-color: #ffcc99;
+}
+
+.bio{
+	margin-left: 150px;
+	margin-right: 30%;
+	margin-top: 100px;
+	/*outline: solid 2px red;*/
+}
+
+.fade-in{  
+	animation: fade-in 1.4s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0; transform: translate(-500px, 0px)}
+    to {opacity: 1;}
+}
