@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Simple Calculator</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="../../styles/calculator.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <header>
+    <a href="../projects.html">Back</a>
+  </header>
+  <div id="main">
+    <h1>Simple Calculator</h1>
+
+    <p>Insert two numbers in the space provided <br> and calculate your answer!</p>
+    
+    <div id="container">
+
+      <div id="input">
+          <input type="text" id="num1">
+
+          <span></span>
+
+          <input type="text" id="num2">
+
+      </div>
+     
+      <div id ="functions">
+        <button onclick="addMe()">+</button>
+
+        <button onclick="subtractMe()">-</button>
+
+        <button onclick="multiplyMe()">×</button>
+
+        <button onclick="divideMe()">÷</button>
+        <button onclick="reload()">Clear</button>
+      </div>
+
+      <div id="answers">
+        <p id="sum">Sum: </p>
+        <p id="subtract">Subtract: </p>
+        <p id="product">Product: </p>
+        <p id="quotient">Quotient: </p>
+      </div> 
+    </div>
+  </div>
+    <!-- <table>
+      <tr>
+
+        <input type="text" id="input" placeholder="0">
+
+        <th><input type="button" value = "1" onclick="addOne()"></th>
+        <th><input type="button" value = "2" onclick="addTwo()"></th>
+        <th><input type="button" value = "3" onclick="addThree()"></th>
+      </tr>
+      <tr>
+        <th><input type="button" value = "4" onclick="addFour()"></th>
+        <th><input type="button" value = "5" onclick="addFive()"></th>
+        <th><input type="button" value = "6" onclick="addSix()"></th>
+      <tr>
+        <th><input type="button" value = "7" onclick="addSeven()"></th>
+        <th><input type="button" value = "8" onclick="addEight()"></th>
+        <th><input type="button" value = "9" onclick="addNine()"></th>
+      </tr>
+      <tr>
+        <th><input type="button" value = "+" onclick="sum()"></th>
+        <th><input type="button" value = "-" onclick="subtract()"></th>
+        <th><input type="button" value = "×" onclick="product()"></th>
+        <th><input type="button" value = "÷" onclick="quotient()"></th>
+      </tr>
+    </table> -->
+
+
+
+
+
+<!-- --------------------------------------------------------------- -->
+    
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="../../scripts/calculator.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
