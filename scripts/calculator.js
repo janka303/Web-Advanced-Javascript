@@ -1,25 +1,49 @@
+const buttons = document.getElementById("functions");
+
+const plus = document.getElementById("plus");
+const minus = document.getElementById("minus");
+const times = document.getElementById("times");
+const divide = document.getElementById("divide");
+
+buttons.addEventListener('click', function(e){
+    if (e.target.matches('button')){
+        // Do something
+        console.log("A button was clicked!");  
+        //get the id property of the event target to identify the specific element that sent the event and store it in a constant
+        const btn = e.target.id;
+        console.log(btn);
+    }if(e.target.id === "plus"){
+        addMe();
+        document.getElementsByTagName("span")[0].innerHTML = "+";
+    }if(e.target.id === "minus"){
+        subtractMe();
+        document.getElementsByTagName("span")[0].innerHTML = "-";
+    }if(e.target.id === "times"){
+        multiplyMe();
+        document.getElementsByTagName("span")[0].innerHTML = "×";
+    }if(e.target.id === "divide"){
+        divideMe();
+        document.getElementsByTagName("span")[0].innerHTML = "÷";
+    }if(e.target.id === "reload"){
+        location.reload();
+    }   
+});
+
 function addMe(){
     //sum is local to the function
     var num1 = Number(document.getElementById("num1").value);
     var num2 = Number(document.getElementById("num2").value);
 
     var sum = num1 + num2;
-    console.log(sum);
-
-    // Using the span elemnt to change with button press
-
-    document.getElementsByTagName("span")[0].innerHTML = "+";
     document.querySelector("#sum").innerHTML = "Sum: " + sum;
+    // Using the span elemnt to change with button press
 }
 
 function subtractMe(){
-	var n1 = Number(document.getElementById("num1").value);
-    var n2 = Number(document.getElementById("num2").value);
+	var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
 
-    var subtract = n1 - n2;
-    console.log(subtract);
-
-    document.getElementsByTagName("span")[0].innerHTML = "-";
+    var subtract = num2 - num2;
     document.querySelector("#subtract").innerHTML = "Subtract: " + subtract;
 }
 
@@ -28,9 +52,6 @@ function multiplyMe(){
     var num2 = Number(document.getElementById("num2").value);
 
     var product = num1 * num2;
-    console.log(product);
-
-    document.getElementsByTagName("span")[0].innerHTML = "×";
     document.querySelector("#product").innerHTML = "Product: " + product;
 }
 
@@ -39,16 +60,15 @@ function divideMe(){
     var num2 = Number(document.getElementById("num2").value);
 
     var quotient = num1 / num2;
-    console.log(quotient);
-
-    document.getElementsByTagName("span")[0].innerHTML = "÷";
     document.querySelector("#quotient").innerHTML = "Quotient: " + quotient;
 }
 
-//https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_loc_reload
-function reload(){
-	location.reload();
-}
+
+
+// //https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_loc_reload
+// function reload(){
+// 	location.reload();
+// }
 
 
 // https://www.youtube.com/watch?v=7HiC7RK6f-c
