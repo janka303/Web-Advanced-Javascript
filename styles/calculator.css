@@ -145,7 +145,7 @@ p:hover #answers{
 
 /*Aligning the input boxes to center*/
 
-input[type="text"]{
+input[type="number"]{
     /*outline: solid 2px red;*/
     /*margin-left: 42%;*/
     display: block;

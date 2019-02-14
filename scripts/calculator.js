@@ -5,6 +5,28 @@ const minus = document.getElementById("minus");
 const times = document.getElementById("times");
 const divide = document.getElementById("divide");
 
+window.addEventListener("keypress", function(e){
+    if(e.charCode == 43){
+        addMe();
+        document.getElementsByTagName("span")[0].innerHTML = "+";    
+    }
+    if(e.charCode == 45){
+        subtractMe();
+        document.getElementsByTagName("span")[0].innerHTML = "-";    
+    }
+    if(e.charCode == 42){
+        multiplyMe();
+        document.getElementsByTagName("span")[0].innerHTML = "×";    
+    }
+    if(e.charCode == 47){
+        divideMe();
+        document.getElementsByTagName("span")[0].innerHTML = "÷";    
+    }
+    if(e.charCode == 99){
+        location.reload();
+    }
+});
+
 buttons.addEventListener('click', function(e){
     if (e.target.matches('button')){
         // Do something
