@@ -65,7 +65,7 @@ function subtractMe(){
 	var num1 = Number(document.getElementById("num1").value);
     var num2 = Number(document.getElementById("num2").value);
 
-    var subtract = num2 - num2;
+    var subtract = num1 - num2;
     document.querySelector("#subtract").innerHTML = "Subtract: " + subtract;
 }
 
