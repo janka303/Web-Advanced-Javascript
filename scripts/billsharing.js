@@ -1,27 +1,38 @@
-const buttons = document.getElementById("tip")
+var itemCharge=[]
 
-buttons.addEventListener('click', function(e){
+const addField = document.getElementById("items");
+const addPeople = document.getElementById("info");
+
+addField.addEventListener("click", function(e){
     if (e.target.matches('button')){
-        // Do something
-        console.log("A button was clicked!");  
-        //get the id property of the event target to identify the specific element that sent the event and store it in a constant
-        const btn = e.target.id;
-        console.log(btn);
+        console.log("Add item was clicked");
+        addItem();  
     }
-
-    if(e.target.id === "10"){
-    	
-    }
-
-
 });
 
-function tip(){
-	const btn = e.target.id;
+addPeople.addEventListener("click", function(e){
+    if (e.target.matches('button')){
+        console.log("Add people was clicked"); 
+        addPerson();
+    }
+});
 
-	var num1 = document.getElementById("10");
-	
-	var tenp = num1 / 10;
-	console.log(num1);
+function addItem(){
+    var inputField = document.createElement("div");
+
+    inputField.innerHTML = "<input id='item' type='text'>";
+    document.getElementById("form").appendChild(inputField);
+
+    var x = document.getElementById("items");
+    itemCharge.push(document.getElementById("item").value);
+    console.log(itemCharge);
+}
+
+function addPerson(){
+    var newPerson = document.createElement("div");
+
+    newPerson.innerHTML = "<input type='text' placeholder='Name'>";
+    newPerson.innerHTML = "<input id='item' type='text'>"
+    document.getElementById("form").appendChild(newPerson);
 
 }
