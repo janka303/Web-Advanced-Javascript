@@ -1,0 +1,47 @@
+h1{
+	text-align: center;
+}
+
+input{
+	text-align: center;
+	display: block;
+	border-radius: 400px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+input:hover{
+	background-color: lightblue;
+}
+
+button{
+	margin-top: 20px;
+	margin-left: 40%;
+	background-color: lightgreen;
+	border:none;
+	font-size: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+p{
+	text-align: center;
+}
+
+#container{
+	width: 50%;
+    margin: auto;
+}
+
+#form{
+	margin: 0 auto;
+    width: 20%;
+    /*outline: 2px solid red;*/
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: lightgray;
+    
+}
