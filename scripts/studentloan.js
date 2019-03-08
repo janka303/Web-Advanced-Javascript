@@ -1,22 +1,25 @@
-const button = document.getElementById("calculate");
-
-button.addEventListener('click', function(e){
-    if (e.target.matches('button')){
-        
-        console.log("A button was clicked!");  
-        
-        const btn = e.target.id;
-        console.log(btn);
-
-        calculate();
-    }
-
+$("button").click(function(){
+    console.log("Button clicked")
+    calculate();    
 });
 
+// button.addEventListener('click', function(e){
+//     if (e.target.matches('button')){
+        
+//         console.log("A button was clicked!");  
+        
+//         const btn = e.target.id;
+//         console.log(btn);
+
+//         calculate();
+//     }
+
+// });
+
 function calculate(){
-	var studentLoan = Number(document.getElementById("studentloan").value);
-    var annualInterest = Number(document.getElementById("annualinterest").value)/100;
-    var time = Number(document.getElementById("time").value);
+	var studentLoan = Number($("#studentloan").val());
+    var annualInterest = Number($("#annualinterest").val())/100;
+    var time = Number($("#time").val());
 
     // n = years * 12 payments per year
     // i = interest
@@ -54,8 +57,7 @@ function calculate(){
 
     console.log("Compound Interest = " + compoundInterest);
 
-    document.querySelector("#monthly").innerHTML = "Monthly Payment: $" + monthlyPayment;
-    document.querySelector("#compound").innerHTML = "Compound Interest: $" + finalCompound;
+    $("#monthly").html("Monthly Payment: $" + monthlyPayment);
+    $("#compound").html("Compound Interest: $" + finalCompound);
 
 }
-

@@ -45,3 +45,9 @@ p{
     background-color: lightgray;
     
 }
+
+a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: #009e73;  
+}
