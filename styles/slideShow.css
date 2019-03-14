@@ -1,0 +1,28 @@
+#container {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+}
+#container div {
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+#container img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+}
+
+#next {
+  right: 5px;
+}
+
+#prev {
+  left: 5px;
+}
