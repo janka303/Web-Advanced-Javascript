@@ -1,3 +1,5 @@
+// https://www.sitepoint.com/making-simple-image-slider-html-css-jquery/
+
 var currentIndex = 0,
   items = $('#container div'),
   itemAmount = items.length;
