@@ -3,19 +3,6 @@ $("button").click(function(){
     calculate();    
 });
 
-// button.addEventListener('click', function(e){
-//     if (e.target.matches('button')){
-        
-//         console.log("A button was clicked!");  
-        
-//         const btn = e.target.id;
-//         console.log(btn);
-
-//         calculate();
-//     }
-
-// });
-
 function calculate(){
 	var studentLoan = Number($("#studentloan").val());
     var annualInterest = Number($("#annualinterest").val())/100;
@@ -50,9 +37,9 @@ function calculate(){
     
     //A = P(1+r)^t
 
-    var compoundInterestP1 = studentLoan*(1+annualInterest);
+    var compoundInterestP1 = 1+annualInterest;
 
-    var compoundInterest = Math.pow(compoundInterestP1, time);
+    var compoundInterest = Math.pow(compoundInterestP1, time)*studentLoan;
     var finalCompound = compoundInterest.toFixed(2);
 
     console.log("Compound Interest = " + compoundInterest);
