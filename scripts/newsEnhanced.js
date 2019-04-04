@@ -37,8 +37,10 @@ $(function() {
 		//search on user input
 		$("#search").click(function(){
 			// console.log("Button press.")
+			$("#results").html("");
+			$("#sources").html("");
 			var articles_url = "https://newsapi.org/v2/everything?";
-			var query = $("#input");
+			var query = $("#input").val();
 			//query is what the user input, this variable is supposed to store the user input
 			// console.log(query);
 
@@ -48,7 +50,7 @@ $(function() {
 
 			//appends to the div called query
 			$.each(articles, function( i, obj ) {
-	        $("#query").append("<li><a href='"+obj.url+"'>"+obj.title+"</a></li>");
+	        $("#results").append("<li><a href='"+obj.url+"'>"+obj.title+"</a></li>");
 
 	        }); 
 	        });
