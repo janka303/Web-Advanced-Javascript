@@ -35,6 +35,8 @@ $(function() {
 //     });
 // });
 		//search on user input
+
+		
 		$("#search").click(function(){
 			// console.log("Button press.")
 			$("#results").html("");
@@ -51,6 +53,10 @@ $(function() {
 			//appends to the div called query
 			$.each(articles, function( i, obj ) {
 	        $("#results").append("<li><a href='"+obj.url+"'>"+obj.title+"</a></li>");
+
+	        // if($("#results").include("query")){
+	        // 	$("#results").style.color="red";
+	        // }
 
 	        }); 
 	        });
