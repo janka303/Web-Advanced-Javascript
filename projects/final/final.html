@@ -13,7 +13,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="../../styles/normalize.css">
-<!--   <link rel="stylesheet" href="../../styles/api.css"> -->
+  <link rel="stylesheet" href="../../styles/final.css">
 </head>
 
 <body>
@@ -30,8 +30,32 @@
       <a href="../projects.html">Back</a>
     </header>
 
-    <button id="play">Play</button>
-    <button id="pause">Pause</button>
+    <!-- <ul class="bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul> -->
+
+    <div id="container">
+      <div id="intro">
+        <h1>Just breathe.</h1>
+        <h2>Visual guide to meditation.</h2>
+        <p>Just Breathe allows you to visualize your meditation process through portraying your breathing as well as heart rate.</p>
+        <button id="play">Begin Experience</button>
+        <audio id="mp3">
+          <source src="../../data/music.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <button id="pause">Pause</button>
+    </div>
   
 
   <script src="../../scripts/modernizr-3.6.0.min.js"></script>
@@ -41,6 +65,8 @@
   <script src="../../scripts/final.js"></script>
   <script src="../../scripts/p5.min.js"></script>
   <script src="../../scripts/p5.sound.js"></script>
+  <script src="../../scripts/p5.dom.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
